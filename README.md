@@ -1,1 +1,7 @@
-# Lung-Cancer
+**Lung Cancer Detection Using Deep Learning (Xception Model)**
+Lung cancer is among the most aggressive forms of cancer, and its early detection plays a vital role in improving survival rates. With recent advances in deep learning, it is now possible to build intelligent systems that can assist medical professionals in diagnosing lung cancer from imaging data with high accuracy.
+In this project, we developed a deep learning model for classifying lung CT scan images into four categories: **Adenocarcinoma, Squamous Cell Carcinoma, Large Cell Carcinoma, and Normal**. We utilized **Xception**, a powerful pretrained convolutional neural network architecture, as the feature extractor. Originally trained on the ImageNet dataset, Xception is known for its high performance and efficiency due to its use of depthwise separable convolutions.
+The pretrained Xception model was integrated into a new classification model using transfer learning. Its weights were frozen to retain learned features, and we added a Global Average Pooling layer followed by a Dense output layer with softmax activation for multi-class classification. The model was compiled using the Adam optimizer and trained with the categorical cross-entropy loss function.
+After 50 training epochs with early stopping and learning rate scheduling, the model demonstrated strong accuracy on both training and validation datasets, showing promise for real-world applications in computer-aided diagnosis systems.
+**Google Colab Link** :https://colab.research.google.com/drive/1bGl5nMAr-hE6q17DUmBjE1n0A2vn3YIh
+This approach helps in reducing manual diagnostic effort, minimizes human error, and provides a reliable tool for early lung cancer detection in clinical settings.
